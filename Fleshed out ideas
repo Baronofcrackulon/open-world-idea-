@@ -1,0 +1,26 @@
+import random
+
+# Define player stats
+player = {"name": "Player", "health": 100, "max_health": 100, "mana": 50, "max_mana": 50, "stamina": 100, "max_stamina": 100, "attack": 10, "defense": 5, "level": 1, "exp": 0, "exp_to_level_up": 100, "gold": 0, "weapon": "Iron Sword", "armor": "Iron Armor", "spells": []}
+
+# Define enemies
+enemies = {"Bandit": {"health": 50, "max_health": 50, "mana": 0, "attack": 10, "defense": 5, "gold": 10, "exp": 20},
+           "Skeleton": {"health": 70, "max_health": 70, "mana": 0, "attack": 15, "defense": 8, "gold": 15, "exp": 30},
+           "Mage": {"health": 50, "max_health": 50, "mana": 100, "max_mana": 100, "attack": 10, "defense": 5, "gold": 20, "exp": 40, "spells": [{"name": "Fireball", "mana_cost": 20, "damage": 30}, {"name": "Ice Storm", "mana_cost": 40, "damage": 50}]}}
+
+# Define weapons and armor
+weapons = {"Iron Sword": {"name": "Iron Sword", "attack": 20, "cost": 50},
+           "Steel Sword": {"name": "Steel Sword", "attack": 30, "cost": 100},
+           "Magic Staff": {"name": "Magic Staff", "attack": 40, "cost": 200}}
+armor = {"Iron Armor": {"name": "Iron Armor", "defense": 10, "cost": 50},
+         "Steel Armor": {"name": "Steel Armor", "defense": 20, "cost": 100},
+         "Mage Robes": {"name": "Mage Robes", "defense": 5, "cost": 200}}
+
+# Define spells
+spells = [{"name": "Heal", "mana_cost": 10, "healing": 20},
+          {"name": "Fireball", "mana_cost": 20, "damage": 30},
+          {"name": "Ice Storm", "mana_cost": 40, "damage": 50}]
+
+# Define quests
+quests = [{"name": "Bandit Problem", "description": "The town is being attacked by bandits. Clear out their hideout and defeat their leader.", "enemies": [{"name": "Bandit", "count": 5}, {"name": "Bandit Leader", "count": 1}], "reward": {"exp": 100, "gold": 50, "item": "Steel Sword"}},
+          {"name": "Skeleton Invasion", "description": "The graveyard is being overrun by skeletons. Clear them out and find out who is behind the invasion.", "enemies": [{"name": "Skeleton", "count": 10}, {"name": "Necromancer", "count
